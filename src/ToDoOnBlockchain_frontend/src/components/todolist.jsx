@@ -21,6 +21,16 @@ const TodoList = ({ todo, delltodo, timestamp, index, editTodo, edited }) => {
   const handleChange = (e) => {
     setCurrentEditTodo(e.target.value);
   };
+
+  const handleKey = (e) => {
+    if (e.key == "Enter") {
+      setEdit((prev) => !prev);
+      setCurrentEditTodo(todo);
+      if (edit) {
+        editTodo(currenEdittTodo, index);
+      }
+    }
+  };
   return (
     <div className="todolistUpperContainer">
       <div className="todoList_container">
@@ -31,6 +41,7 @@ const TodoList = ({ todo, delltodo, timestamp, index, editTodo, edited }) => {
             className="textarea"
             wrap="soft"
             value={currenEdittTodo}
+            onKeyDown={(e) => handleKey(e)}
             onChange={(e) => handleChange(e)}
           ></textarea>
         )}

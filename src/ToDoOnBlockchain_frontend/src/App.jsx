@@ -7,12 +7,7 @@ import { ToDoOnBlockchain_backend } from "../../declarations/ToDoOnBlockchain_ba
 
 function App() {
   const [typingTodo, setTypingTodo] = useState("");
-  const [todo, setTodo] = useState([
-    // {
-    //   todo: "your first todo appear here",
-    //   timestamp: new Date().toLocaleString(),
-    // },
-  ]);
+  const [todo, setTodo] = useState([]);
 
   const smartfunc = (setState) => {
     setState((prevState) => [
