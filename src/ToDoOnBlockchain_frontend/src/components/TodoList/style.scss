@@ -29,6 +29,10 @@
 
     .delete_absolute:hover {
       scale: 1.07;
+      color: rgb(170, 170, 138);
+    }
+    .delete_absolute:active {
+      color: rgb(184, 49, 49);
     }
   }
 }
@@ -48,4 +52,7 @@
   color: white;
   margin: 10px 0px 5px 10px;
   width: 50px;
+}
+.edit_save:hover {
+  color: rgb(170, 170, 138);
 }

@@ -1,7 +1,8 @@
-import { useState } from "react";
-import "./todolist.scss";
+import "./style.scss";
 
-const TodoList = ({ todo, delltodo, timestamp, index, editTodo, edited }) => {
+import { useState } from "react";
+
+const Todo_List = ({ todo, delltodo, timestamp, index, editTodo, edited }) => {
   const [edit, setEdit] = useState(false);
 
   const [currenEdittTodo, setCurrentEditTodo] = useState("");
@@ -31,6 +32,7 @@ const TodoList = ({ todo, delltodo, timestamp, index, editTodo, edited }) => {
       }
     }
   };
+
   return (
     <div className="todolistUpperContainer">
       <div className="todoList_container">
@@ -66,4 +68,4 @@ const TodoList = ({ todo, delltodo, timestamp, index, editTodo, edited }) => {
   );
 };
 
-export default TodoList;
+export default Todo_List;
