@@ -4,13 +4,13 @@
       "main": "src/ToDoOnBlockchain_backend/main.mo",
       "type": "motoko"
     },
+    "Token": {
+      "main": "src/Token/token.mo",
+      "type": "motoko"
+    },
     "ToDoOnBlockchain_frontend": {
-      "dependencies": [
-        "ToDoOnBlockchain_backend"
-      ],
-      "source": [
-        "src/ToDoOnBlockchain_frontend/dist"
-      ],
+      "dependencies": ["ToDoOnBlockchain_backend", "Token"],
+      "source": ["src/ToDoOnBlockchain_frontend/dist"],
       "type": "assets",
       "workspace": "ToDoOnBlockchain_frontend"
     },

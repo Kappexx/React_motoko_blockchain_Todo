@@ -29,7 +29,7 @@ actor _SaveTodo{
 
     todos := List.push(newTodo, todos);
 
-    Debug.print(debug_show(todos))
+    // Debug.print(debug_show(todos))
 
    
   };
@@ -60,7 +60,7 @@ actor _SaveTodo{
        todos := List.append(todosforEdit, listEndMinus1);
       
     };
-    Debug.print(debug_show("t"))
+   
     
   };
 };
