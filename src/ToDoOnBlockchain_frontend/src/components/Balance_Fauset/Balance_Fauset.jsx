@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.scss";
-
+import { Token } from "../../../../declarations/Token";
 import Button from "../Button/Button";
 
 const Balace_Fauset = () => {
@@ -17,7 +17,7 @@ const Balace_Fauset = () => {
       <div className="Top_Up_Container">
         <span>Top Up Your Balance For Free Once</span>
 
-        <Button title={"Top Up"} />
+        <Button currentBalance={setBalance} />
       </div>
     </div>
   );
