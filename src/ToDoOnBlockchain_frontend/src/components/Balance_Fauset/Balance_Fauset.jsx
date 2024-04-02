@@ -15,9 +15,9 @@ const Balace_Fauset = () => {
         </span>
       </div>
       <div className="Top_Up_Container">
-        <span>Top Up Your Balance For Free Once</span>
+        <i>Top Up Your Balance For Free Once</i>
 
-        <Button currentBalance={setBalance} />
+        <Button currentBalance={setBalance} balance={balance} />
       </div>
     </div>
   );

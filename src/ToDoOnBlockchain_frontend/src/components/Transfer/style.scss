@@ -1,0 +1,40 @@
+.container {
+  // margin-top: 20px;
+
+  .transfer_inputs_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .transfer_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .p_button {
+      color: white;
+      text-align: center;
+      background-color: rgb(184, 49, 49);
+      padding: 3.5px;
+      border-radius: 3px;
+      cursor: pointer;
+      border: none;
+      width: fit-content;
+    }
+    .p_button:hover {
+      scale: 1.04;
+      box-shadow: 10px -7px 42px 36px rgba(0, 0, 0, 0.1),
+        0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    .status {
+      color: yellowgreen;
+      height: 50px;
+      text-align: center;
+    }
+  }
+}
+input {
+  outline: none;
+}

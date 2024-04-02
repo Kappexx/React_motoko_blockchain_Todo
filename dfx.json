@@ -8,6 +8,10 @@
       "main": "src/Token/token.mo",
       "type": "motoko"
     },
+    "TestCanister": {
+      "main": "src/TestCanister/test.mo",
+      "type": "motoko"
+    },
     "ToDoOnBlockchain_frontend": {
       "dependencies": ["ToDoOnBlockchain_backend", "Token"],
       "source": ["src/ToDoOnBlockchain_frontend/dist"],

@@ -1,8 +1,8 @@
 import "./style.scss";
 import { Token } from "../../../../declarations/Token";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
-const Button = ({ currentBalance }) => {
+const Button = ({ currentBalance, balance }) => {
   const [isDisable, setIsDisable] = useState(false);
   const [buttonText, setButtonText] = useState("Top Up 10,000 GFD");
 
@@ -16,6 +16,7 @@ const Button = ({ currentBalance }) => {
   async function fetchBalance() {
     currentBalance((await Token.showbalance()).toLocaleString() + " GFD");
   }
+
   useEffect(() => {
     fetchBalance();
   }, [isDisable]);
