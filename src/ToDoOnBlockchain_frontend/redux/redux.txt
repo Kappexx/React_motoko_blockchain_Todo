@@ -1,0 +1,2 @@
+
+reducers - > aq ketdeba slice an slicebi romelsac enicheba saxeli, da sawyisi state, aseve MTAVARIA reduser romelic slisshi iwereba da sheicavs  funqciebs ris mixedvitac icvleba state
